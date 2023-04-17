@@ -1,0 +1,455 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+a{
+  text-decoration: none;
+  color: #ffff;
+}
+.row{
+  margin: 0;
+}
+.navbar{
+ position: fixed;
+ margin-top: 0%;
+ z-index: 2;
+ width: 100%;
+} 
+.nav-item .nav-link{
+  font-weight: 600;
+}
+.nav-item .nav-link:hover{
+  color: #369d9c!important;
+}
+
+.btn-outline-success {
+  color: #369d9c;
+  border-color: #369d9c;
+}
+
+.btn-outline-success:hover {
+color: #fff;
+background-color: #369d9c;;
+border-color: #369d9c;
+}
+
+.jarallax {
+  position: relative;
+  z-index: 0;
+}
+.jarallax>.jarallax-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1
+}
+.navbar-brand{
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+.best_friend{
+  padding-top: 20rem;
+  font-size: 2rem;
+  color: #fff;
+  padding-left: 2rem;
+}
+.all_need{
+  padding-top: 2rem;
+  font-size: 3rem;
+  color: #ffff;
+  font-weight: 700;
+  padding-bottom: 12rem;
+  padding-left: 2rem;
+}
+
+/* ----------------------------------------------------------------------------------------
+second section */
+.pet_products{
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container h1{
+  color: #f5c271;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardImg{
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transform:scale(1);
+  transition: all 600ms ease-in-out;
+  cursor:pointer;
+  margin-bottom: 2rem;
+}
+
+.cardImg:hover{
+  transform:scale(1.05);
+  }
+
+.cardImg h1{
+  color: #ffff;
+  font-size: 2rem;
+  font-weight: 900!important;
+  margin-top: 1rem;
+  margin-bottom: 20rem;
+}
+
+/* ----------------------------------------------------------------------------------------
+third section - Services */
+#services{
+margin-top: 3rem;
+}
+.title_service p{
+color: #707071;
+font-family: 'Delicious Handrawn', cursive;
+font-size: 2rem;
+margin-bottom: 4rem;
+}
+.col-sm-12, .col-md-6, .col-md-4{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.card{
+margin-bottom: 2rem;
+width: 22rem!important;
+}
+.btn-primary {
+color: #fff;
+background-color: #f5c271;
+border-color: #f5c271;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:checked,.btn-primary:focus {
+color: #fff;
+background-color: #198754;
+border-color: #198754;
+box-shadow: none;
+}
+
+/* ----------------------------------------------------------------------------------------
+footer */
+
+footer, .copy {
+background: #369d9c;
+}
+
+footer img {
+width: 100%;
+max-width: 15rem;
+}
+
+footer .contact-info {
+display: flex
+}
+
+footer .contact-info .data {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 1.5rem
+}
+
+footer .contact-info .data p {
+color: #fff;
+font-weight: 300;
+margin: 0;
+font-size: 14px
+}
+
+footer .contact-info .data img {
+max-width: 25px
+}
+
+footer .contact-info .data .img-fix {
+max-width: 37px
+}
+
+footer ul {
+padding: 0;
+list-style: none;
+margin-bottom: 0
+}
+
+footer ul li {
+display: inline;
+margin: 0 0.25rem
+}
+
+footer ul li a img {
+max-width: 30px;
+transition: opacity 0.1s ease-in-out
+}
+
+footer ul li a:hover img {
+opacity: 0.8
+}
+
+footer .footer-btn {
+color: #fff;
+font-weight: 700;
+font-size: 12px;
+border: 2px solid #f5c271;
+border-radius: 50px;
+display: block;
+padding: 0 1rem;
+line-height: 2.2;
+margin: 0 1rem;
+transition: all 0.1s ease-in-out
+}
+
+footer .footer-btn:hover {
+text-decoration: none;
+background: #f5c271;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24)
+}
+
+footer .contact-info .data:nth-child(2) {
+margin-right: -2rem
+}
+
+.copy {
+background: #369d9c;
+padding: 1rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: #fff;
+font-size: 12px;
+}
+/* ----------------------------------------------------------------------------------------
+FORM */
+
+.work-hero .container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.msg{
+  padding: 2rem;
+  background-color: #3c3c3cba;
+  margin-top: 11rem;
+  margin-bottom: 11rem;
+  border-radius: 12px;
+  border: 2px solid #f5c271;
+}
+.form__input-error-message{
+  display: none;
+  color: #fff;
+}
+.form h3{
+  color: #f5c271;
+  margin-bottom: 2rem;
+}
+
+.form__message--error{
+  color: #fff!important;
+}
+.form__button{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 6px;
+  box-shadow: none;
+}
+.form__text a:hover{
+  color: #0d4645;
+}
+
+/* ----------------------------------------------------------------------------------------
+CREATE */
+
+.contact-form{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-image: url(../pet_img/pets_3.jpg);
+  background-repeat: no-repeat;
+  background-position:initial;
+  background-size: cover;
+}
+.contact-form h2{
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  color: #f5c271;
+  font-family:'Delicious Handrawn', cursive; ;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+.formulario__input {
+	width: 320px;
+	background: #fff;
+	border: 3px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;
+  border: 3px solid #369d9c;
+  outline: none;
+}
+
+
+.formulario__input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+.formulario__grupo-terminos, 
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 2;
+}
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__btn{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  border-radius: 8px;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__grupo-terminos, 
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
