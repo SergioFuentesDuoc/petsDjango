@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'pets.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.oracle',
-        'NAME': '127.0.0.1:1521/xe',
-        'USER': 'c##prueba',
-        'PASSWORD': 'prueba',
+        'NAME': 'he1m462ynxqm2gal_high',
+        'USER': 'admin',
+        'PASSWORD': '',
         'TEST': {
             'USER' : 'default_test',
             'TBLSPACE': 'default_test_tbls',

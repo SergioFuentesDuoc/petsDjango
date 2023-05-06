@@ -1,0 +1,2 @@
+WALLET_LOCATION = (SOURCE = (METHOD = file) (METHOD_DATA = (DIRECTORY="C:\Users\yo\My Drive\GitHub\petsDjango\pets\Wallet_HE1M462YNXQM2GAL")))
+SSL_SERVER_DN_MATCH=yes
