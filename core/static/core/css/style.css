@@ -300,7 +300,7 @@ CREATE */
 .contact-form{
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url(../../core/img/pets_3.jpg);
+  background-image: url(../pet_img/pets_3.jpg);
   background-repeat: no-repeat;
   background-position:initial;
   background-size: cover;
