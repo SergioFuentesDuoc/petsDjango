@@ -6,7 +6,7 @@ const expresiones = {
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, 
 	telefono: /^(\+?56)?(\s?)(0?9)(\s?)[98765432]\d{7}$/,
 	correo: /^([a-zA-ZñÑ0-9_.+-])+\@(([a-zA-ZñÑ0-9-])+\.)+([a-zA-ZñÑ0-9]{2,4})+$/,
-	password: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{8,}$/
+	password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
 	
 }
 

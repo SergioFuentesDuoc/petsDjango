@@ -13,6 +13,7 @@ class Cliente(models.Model):
                 return self.nombreCliente
 
 class Mascota(models.Model):
+        codigoChip = models.IntegerField()
         nombreMascota = models.CharField(max_length=50)
         nombreCliente = models.ForeignKey(Cliente, on_delete=models.PROTECT)
 

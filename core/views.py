@@ -25,3 +25,4 @@ def realizarregistro(request):
                            passCliente = pass_c)
     messages.success(request, 'Cliente registrado')
     return redirect('create')
+

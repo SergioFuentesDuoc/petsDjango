@@ -10,4 +10,5 @@ urlpatterns = [
     path('form', form, name="form"),
     path('create', create, name="create"),
     path('realizarregistro',realizarregistro, name="realizarregistro" )
+
 ]
