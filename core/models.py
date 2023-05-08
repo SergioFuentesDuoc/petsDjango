@@ -8,7 +8,6 @@ class Cliente(models.Model):
         correoCliente = models.CharField(max_length=50)
         passCliente = models.CharField(max_length=30)
 
-
         def __str__(self):
                 return self.nombreCliente
 
