@@ -15,6 +15,7 @@ class Cliente(models.Model):
 class Mascota(models.Model):
         codigoChip = models.IntegerField()
         nombreMascota = models.CharField(max_length=50)
+        edadMascota = models.IntegerField()
         nombreCliente = models.ForeignKey(Cliente, on_delete=models.PROTECT)
 
         def __str__(self):

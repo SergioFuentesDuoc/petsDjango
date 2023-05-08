@@ -1,10 +1,16 @@
 from django.shortcuts import render,redirect
 from .models import Cliente
+from .models import Producto
+
 from django.contrib import messages
 
 # Create your views here.
 def home(request):
-    return render(request,'core/home.html')
+    productos = Producto.objects.all()
+    data = {
+        'productos': productos
+    }
+    return render(request,'core/home.html', data)
 
 def form(request):
     return render(request,'core/form.html')
@@ -13,16 +19,18 @@ def create(request):
     return render(request,'core/create.html')
 
 def realizarregistro(request):
-    nombre_c = request.POST['nombre']
-    telefono_c = request.POST['telefono']
-    correo_c = request.POST['correo']
-    pass_c = request.POST['password']
+    nombre = request.POST['nombre']
+    telefono = request.POST['telefono']
+    correo = request.POST['correo']
+    password = request.POST['password']
 
     #insert en tabla
-    Cliente.objects.create(nombreCliente = nombre_c,
-                           telefonoCliente = telefono_c,
-                           correoCliente = correo_c,
-                           passCliente = pass_c)
+    Cliente.objects.create(nombreCliente = nombre, telefonoCliente = telefono, correoCliente = correo, passCliente = password)
     messages.success(request, 'Cliente registrado')
     return redirect('create')
+
+
+
+
+
 
